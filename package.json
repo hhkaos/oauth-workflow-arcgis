@@ -1,0 +1,16 @@
+{
+  "name": "oauth-workflow-arcgis",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base ./",
+    "export": "slidev export"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^53.0.0",
+    "@slidev/theme-default": "^0.25.0",
+    "qrcode": "^1.5.4",
+    "vue": "^3.5.43"
+  }
+}

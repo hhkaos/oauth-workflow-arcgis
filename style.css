@@ -1,0 +1,51 @@
+/* Palette picked to sit on the DevTech Summit navy → teal background */
+:root {
+  --c-bg: #23255f;
+  --c-ink: #f1f2ff;
+  --c-ink-2: #cfd3f5;
+  --c-muted: #9aa1d6;
+  --c-front: #6ec1ff; /* front channel: through the browser */
+  --c-back: #ff8a7a; /* back channel: direct HTTPS */
+  --c-local: #c9ccf5; /* inside the app */
+  --c-you: #ffc857; /* code the developer writes */
+  --c-sdk: #45e0b4; /* done by the SDK / library */
+  --c-other: #8e95c9; /* user or ArcGIS */
+  --font-sans: 'Inter', 'Avenir Next', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.slidev-layout {
+  background: var(--c-bg) url('/bg.png') center / cover no-repeat;
+  color: var(--c-ink);
+  font-family: var(--font-sans);
+  padding: 28px 40px;
+}
+
+.slidev-layout h1 { font-weight: 800; color: var(--c-ink); }
+.slidev-layout h1 + p { opacity: 1; color: var(--c-ink-2); }
+
+.kicker-top {
+  font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--c-sdk);
+}
+
+/* Code blocks over the gradient */
+.slidev-layout .slidev-code {
+  background: rgba(10, 12, 40, .55) !important;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 10px;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+/* Slide header used on diagram slides */
+.slide-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 6px; }
+.slide-head h2 { font-size: 26px; font-weight: 800; margin: 0; line-height: 1.2; }
+.slide-head .sub { color: var(--c-muted); font-size: 14px; }
+
+.chip { display: inline-flex; align-items: center; gap: 6px; margin-left: 14px; font-size: 13px; color: var(--c-ink-2); }
+.chip::before { content: ''; width: 18px; height: 5px; border-radius: 3px; background: var(--c); }
+.chip.you { --c: var(--c-you); }
+.chip.sdk { --c: var(--c-sdk); }
+.chip.other { --c: var(--c-other); }
+
+.slidev-layout :not(pre) > code { background: rgba(0, 0, 0, .22); color: inherit; padding: 1px 6px; border-radius: 4px; }
