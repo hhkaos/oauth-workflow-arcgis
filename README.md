@@ -1,6 +1,6 @@
 # Sign in with ArcGIS, step by step
 
-Live: https://hhkaos.github.io/oauth-workflow-arcgis/
+Live: https://www.rauljimenez.info/oauth-workflow-arcgis/
 
 Animated OAuth 2.0 authorization code + PKCE walkthrough (Slidev) for
 *Security and authentication for custom applications*, Esri European DevTech Summit 2026.
